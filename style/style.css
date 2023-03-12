@@ -4,46 +4,35 @@
     font-family: 'oswald', sans-serif;
 }
 
-.logo-js {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+/* NAV */
+.navbar {
+    display: flex;
+    justify-content: end;
 }
+
+/* NAV */
 
 .margin-right-2rem {
     margin-right: 2rem;
 }
 
-.js {
-    margin: 0 3rem 0 3rem;
-}
-
-.background-oldLace {
-    background-color: #FDF5E6;
-}
-
-.background-black {
-    background-color: #212529;
-}
 
 .font-color-white {
     color: white
 }
 
-.tamanh-tecnologias {
-    height: 700rem;
-    width: 50rem;
+.styleNavbar {
+    background-color: #2d1b33 ;
 }
 
-.b-example-divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+/* NAV */
+/* 
+APRESENTAÇÃO */
+
+.olaMundo {
+    margin-left: 10%;
 }
+
 
 .foto {
     height: 50vh;
@@ -69,68 +58,97 @@
     margin-bottom: 2rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.paragrafoEmBaixoDaFoto {
+    color: white;
+    margin: 0;
+    font-size: 25px;
+}
+
+.fotoPerfil {
+    border: 2px black solid;
+}
+
+
+.backgroundSobreMim {
+    /* background-color: #6610f2; */
+    animation: mudar-cores 5s ease-in-out infinite;
+    /* background: linear-gradient(red, yellow); */
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,
+    #ee887a 0%,
+            #e4e391 35%,
+            #9abc8a 100%);
+}
+
+
+/* @keyframes mudar-cores {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: #6610f2;
+    }
+
+    100% {
+        background-color: red;
+    }
+} */
+
+/* APRESENTAÇÃO */
+*/
+
+/* OBJETIVO */
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+/* OBJETIVO */
+
+/* HABILIDADES */
+
+.h1Habilidades {
+    text-shadow: -1px -1px 0 #000,
+    /* cima-esquerda */
+    1px -1px 0 #000,
+    /* cima-direita */
+    -1px 1px 0 #000,
+    /* baixo-esquerda */
+    1px 1px 0 #000;
+/* baixo-direita */
+}
+
+.habilidadesEdit{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,
+    #9abc8a 0%,
+            #e4e391 35%,
+            #ee887a 100%);
+}
+
 .margin-top-2rem {
     margin-top: 2rem;
-}
-
-.paddin-zero {
-    padding: 0;
-}
-
-.icons-contatos {
-    height: 4rem;
-    width: 4rem;
-    margin: 3rem;
-}
-
-.email-icon {
-    height: 4.2rem;
-    width: 4rem;
-    margin: 3rem;
 }
 
 .margin-zero {
     margin: 0;
 }
 
-.certificados {
-    width: 20rem;
-    height: 10rem;
-}
-
-
-.text-center {
-    text-align: center;
-}
-
-.text-justfiy {
-    text-align: justify;
-}
-
-
 .imgs-tecnologias {
-    height: 20rem;
-    width: 18rem;
+    height: 15rem;
+    width: 15rem;
 }
-
-.ProStyle {
-    width: 95%;
-    height: 225;
-    margin: 0.5rem;
-    border-radius: 10px;
-}
-
-.justify-content-stretch {
-    justify-content: stretch;
-}
-
-.parisback {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 1;
-}
-
 
 .overlay {
     position: absolute;
@@ -146,9 +164,13 @@
     border-radius: 5px;
 }
 
-.container-tec:hover .overlay {
-    opacity: 1;
+@media (max-width: 600px) {
+    .imgs-tecnologias-media {
+        height: 10rem;
+        width: 10rem;
+    }
 }
+
 
 .text-tec {
     color: black;
@@ -162,29 +184,58 @@
     text-align: center;
 }
 
-
-
-@media (max-width: 600px) {
-    .imgs-tecnologias-media {
-        height: 20rem;
-        width: 15rem;
-    }
+.container-tec:hover .overlay {
+    opacity: 1;
 }
 
-.paragrafoEmBaixoDaFoto {
-    color: white;
-    margin: 0;
-    font-size: 25px;
+/* HABILIDADES */
+
+
+
+/*PROJETOS */
+.styleProjetos{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,
+    #9abc8a 0%,
+            #e4e391 35%,
+            #ee887a 100%);
 }
 
-.fotoPerfil {
-    border: 2px black solid;
+.paddin-zero {
+    padding: 0;
+}
+
+.ProStyle {
+    width: 95%;
+    height: 225;
+    margin: 0.5rem;
+    border-radius: 10px;
 }
 
 .logoTera {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+
+/* PROJETOS */
+
+
+
+
+
+/* CERTIFICADOS */
+
+.certificados {
+    width: 20rem;
+    height: 10rem;
+}
+
+/* CERTIFICADOS */
+
+
+/* CONTATOS */
 
 .box {
     display: flex;
@@ -199,15 +250,14 @@
 
 .containerFooter {
     display: flex;
-}
-
-.container {
-    margin-right: 5%;
-    margin-left: 5%;
     width: 100%;
 }
 
-
+/* .container {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 100%;
+} */
 
 .icons {
     display: flex;
@@ -219,6 +269,10 @@
     align-items: center;
     flex-direction: column;
 }
+
+/* CONTATOS */
+
+
 
 h2 {
     justify-content: center;

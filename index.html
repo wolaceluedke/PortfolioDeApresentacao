@@ -16,7 +16,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-3 menu">
+  <nav class="navbar navbar-expand-sm menu styleNavbar">
     <div class="container-fluid">
       <h3 class="font-color-white margin-right-2rem">Wolace Luedke</h3>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -25,7 +25,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse targets menu" id="navbarsExample03">
+      <div class="navbar-collapse collapse targets navbar" id="navbarsExample03">
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item"><a class="nav-link font-color-white" href="#targetObjetivo">Objetivo</a>
           </li>
@@ -46,29 +46,33 @@
   <div class=""></div>
 
   <section>
-    <div class="text-secondary text-center d-flex">
-      <img src="./imgs/parisBackground.jpg" alt="" class="parisback ">
-      <h1 class="display-5 fw-bold text-white margin-bottom-2rem apresentação">Olá, Mundo!<br>Meu nome é Wolace.</h1>
-      <div class="col-lg-6 mx-auto">
+    <div class="text-secondary text-center d-flex backgroundSobreMim">
+      <h1 class="display-5 fw-bold text-white margin-bottom-2rem apresentação olaMundo ">Olá Mundo!<br>Meu nome é
+        Wolace.</h1>
+      <div class="col-lg-6 mx-auto FotoTextoMain">
         <img src="./imgs/ImagemPerfil.jpeg" alt="Meu retrato com uma camiseta preta"
           class="foto margin-bottom-2rem apresentação fotoPerfil">
-        <p class="paragrafoEmBaixoDaFoto apresentação">Atualmente estou cursando o curso de desenvolvedor Full
-          Stack, sigo
-          obtendo o máximo de conhecimento para chegar preparado ao mercado de trabalho.
+        <p class="paragrafoEmBaixoDaFoto apresentação">Full Stack Developer
         </p>
+        <button>Dowload CV</button>
       </div>
     </div>
   </section>
 
   <div class="b-example-divider"></div>
 
-  <section>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <section class="cssObjetivo">
+    <div class="position-relative overflow-hidden text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-4 fw-normal margin-bottom-2rem" id="targetObjetivo">Objetivo</h1>
-        <p class="lead fw-normal text-initial">Meu objetivo de carreira é virar especialista em front-end, e me
-          aperfoiçoar durante os anos para virar um desenvoldor em < T> na qual vou buscar conhecimento além da minha
-            área de especialização.
+        <p class="lead fw-normal text-initial">Como um desenvoldor full stack, tenho um conjunto de habilidades abrangentes
+          que me permitem criar aplicativos e sites da web completos e funcionais. Minhas habilidades
+          incluem HTML,CSS,Javascript, React e Node.
+          <br>
+           Um dos meus objetivos de carreira é me tornar um profissional em < T >. Isso 
+           envolverá a expansão dos meus conhecimentos em áreas além da minha área de especialização
+           atual, o que me permitirá colaborar efetivamente com profissionais de outras áreas e oferecer
+           soluções mais abrangentes aos meu cliente.
 
         </p>
       </div>
@@ -80,15 +84,15 @@
   <div class="b-example-divider"></div>
 
   <section>
-    <div class=" row cards justify-content-center bg-dark text-secondary margin-zero">
+    <div class=" row cards justify-content-center b text-secondary margin-zero habilidadesEdit">
 
-      <h1 class="display-5 text-white margin-bottom-2rem margin-top-2rem text-center" id="targetHabilidades">
+      <h1 class="display-5 text-white margin-bottom-2rem margin-top-2rem text-center h1Habilidades" id="targetHabilidades">
         Habilidades
       </h1>
 
       <!--HTML-->
       <div class="card col-10 col-sm-5 col-lg-3 m-3 imgs-tecnologias imgs-tecnologias-media container-tec">
-        <img src="imgs/html.png" class="card-img-top mt-3 h-100 cardRotate" alt="Logo do HTML 5">
+        <img src="imgs/html.png" class="card-img-top mt-3 h-0 cardRotate" alt="Logo do HTML 5">
         <div class="overlay">
           <div class="text-tec"> HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos
             HTML podem ser interpretados por navegadores.</div>
@@ -116,8 +120,7 @@
       <div class="card col-10 col-sm-5 col-lg-3 m-3 imgs-tecnologias imgs-tecnologias-media container-tec">
         <img src="imgs/nodejs.png" class="card-img-top mt-3 h-100" alt="Logo do NodeJs">
         <div class="overlay">
-          <div class="text-tec"> Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do
-            Google e que permite a execução de códigos JavaScript fora de um navegador web.</div>
+          <div class="text-tec"> Node.js é um software de código aberto, multiplataforma, permite a execução de códigos JavaScript fora de um navegador web.</div>
         </div>
       </div>
 
@@ -167,13 +170,18 @@
 
   <div class="accordion position-relative overflow-hidden p-3 p-md-3 m-md-5 text-center " id="accordionExample">
 
-    <h1 class="display-5 margin-bottom-2rem text-center">Certificados</h1>
+    <h1 class="display-5 margin-bottom-2rem text-center" id="targetCertificados">Certificados</h1>
+
+  
     <div class="accordion-item ">
+
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
           aria-expanded="true" aria-controls="collapseOne">
-          Front-end Tera
+          Front-end
         </button>
+
+
       </h2>
       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
         data-bs-parent="#accordionExample">
@@ -226,6 +234,28 @@
         </div>
       </div>
     </div>
+    <div class="accordion-item ">
+
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+          aria-expanded="true" aria-controls="collapseOne">
+          Full Stack
+        </button>
+
+
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p> No curso <strong>Full Stack Development</strong> foi passado o frontend de uma aplicação, com isso foi
+            explorado as tecnologias necessárias para tal objetivo. Capaz de criar uma página web ou até mesmo um game
+            web usando HTML, CSS, Javascript e suas bibliotecas e frameworks.</p>
+          <div class="justify-content-center">
+            <img src="imgs/FULL STACK.jfif" alt="certificado front-end" class="certificados accordion-body">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </div>
 
@@ -234,7 +264,7 @@
 
   <!--Projetos -->
 
-  <div class="album py-5 bg-dark" id="targetProjetos">
+  <div class="album py-5 backgroundSobreMim " id="targetProjetos">
     <div class="container">
 
       <h1 class="display-5 text-white margin-bottom-2rem text-center">Projetos:</h1>
@@ -309,7 +339,7 @@
 
   <div class="containerFooter">
     <div class="container">
-      <h2>Contatos</h2>
+      <h2 id="targetContatos">Contatos</h2>
       <div class="icons">
         <div class="icon">
           <a href="mailto:wolacepin@hotmail.com" target="_blank">
@@ -321,7 +351,6 @@
             <p>E-mail</p>
           </a>
           <a href="mailto:wolacepin@hotmail.com" target="_blank">
-            <p>wolacepin@hotmail.com</p>
           </a>
         </div>
         <div class="icon">
@@ -334,7 +363,6 @@
             <p>Telefone</p>
           </a>
           <a href="https://api.whatsapp.com/send?phone=5547991287376" target="_blank">
-            <p>(47) 991287376</p>
           </a>
         </div>
         <div class="icon">
@@ -347,7 +375,6 @@
             <p>Linkedin</p>
           </a>
           <a href="https://www.linkedin.com/in/wolace-luedke-94165218a/" target="_blank">
-            <p>@wolace-luedke</p>
           </a>
         </div>
         <div class="icon">
@@ -360,7 +387,6 @@
             <p>Github</p>
           </a>
           <a href="https://github.com/wolaceluedke" target="_blank">
-            <p>wolaceluedke</p>
           </a>
         </div>
       </div>
