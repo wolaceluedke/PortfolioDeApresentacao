@@ -12,10 +12,6 @@
 
 /* NAV */
 
-.margin-right-2rem {
-    margin-right: 2rem;
-}
-
 
 .font-color-white {
     color: white
@@ -44,8 +40,15 @@ APRESENTAÇÃO */
     width: 45vh;
     border-radius: 50%;
 }
+@media screen and (max-width: 1400px){
+    .foto{
+        height: 30vh;
+        width: 35vh;
+    }
+}
 
 .apresentação {
+    
     margin-top: 20%;
     z-index: 2;
     position: relative;
@@ -57,10 +60,6 @@ APRESENTAÇÃO */
         /* baixo-esquerda */
         1px 1px 0 #000;
     /* baixo-direita */
-}
-
-.margin-bottom-2rem {
-    margin-bottom: 2rem;
 }
 
 .text-center {
@@ -79,16 +78,27 @@ APRESENTAÇÃO */
 
 
 .backgroundSobreMim {
-    /* background-color: #6610f2; */
+    display: flex;
+    align-items: center;
     animation: mudar-cores 5s ease-in-out infinite;
-    /* background: linear-gradient(red, yellow); */
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: linear-gradient(90deg,
     #ee887a 0%,
             #e4e391 35%,
             #9abc8a 100%);
 }
+
+@media (max-width: 700px) {
+    .backgroundSobreMim{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin-bottom: 30%;
+    }
+}
+
 
 
 /* @keyframes mudar-cores {
@@ -198,9 +208,20 @@ APRESENTAÇÃO */
 
 
 /*PROJETOS */
+.backgroundProjetos{
+    animation: mudar-cores 5s ease-in-out infinite;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+    #ee887a 0%,
+            #e4e391 35%,
+            #9abc8a 100%);
+}
+
+
 .styleProjetos{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(90deg,
     #9abc8a 0%,
             #e4e391 35%,
@@ -283,3 +304,5 @@ h2 {
     justify-content: center;
     display: flex;
 }
+
+
