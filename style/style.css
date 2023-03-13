@@ -44,6 +44,14 @@ APRESENTAÇÃO */
     .foto{
         height: 30vh;
         width: 35vh;
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .foto{
+        height: 20vh;
+        width: 20vh;
+        border-radius: 50%;
     }
 }
 
